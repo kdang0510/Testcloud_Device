@@ -6,6 +6,7 @@
    <UUID>4f374e13-016a-4c2c-9569-863dde264738</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/khang.dang/Katalon Studio/TestcloudDevice/TestcloudDevice.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
