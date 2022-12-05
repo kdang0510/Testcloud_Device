@@ -19,15 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('/Users/khang.dang/Desktop/97.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.Button (2)'), 0)
 
 WebUI.delay(3)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button (1)'), 0)
-
-WebUI.delay(3)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.TextView -'), 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.Button (3)'), 0)
 
 Mobile.closeApplication()
 
