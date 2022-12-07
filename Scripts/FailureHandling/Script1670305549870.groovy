@@ -17,13 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('/Users/khang.dang/Desktop/DBO_Toko_App_base (1).apk', true)
+WebUI.openBrowser('')
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button (2)'), 0)
+WebUI.navigateToUrl('https://google.com')
 
-WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'), FailureHandling.OPTIONAL)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button (3)'), 0)
-
-Mobile.closeApplication()
+WebUI.closeBrowser()
 
