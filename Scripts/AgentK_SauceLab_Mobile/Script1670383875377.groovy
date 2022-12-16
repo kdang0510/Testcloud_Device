@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+Mobile.startApplication('storage:filename=ApiDemos-WhiteScreen.apk', true)
 
-WebUI.navigateToUrl('https://google.com')
+Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Accessibility (3)'), 0)
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'), FailureHandling.OPTIONAL)
+Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Accessibility Node Provider (3)'), 0)
 
-WebUI.closeBrowser()
+Mobile.closeApplication()
 

@@ -1,7 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
-
-import com.kms.katalon.core.configuration.RunConfiguration
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -20,32 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startApplication('kobiton-store:473877', true)
 
-RunConfiguration.set
-
-Mobile.startApplication('/Users/khang.dang/Desktop/New Folder With Items/APK/ExpenseAppVer1.0.apk', true)
-
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email'), 'test@perfecto.com', 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.EditText - Password'), 0)
-
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (1)'), 'test123', 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.LinearLayout'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.ImageButton'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.CheckedTextView - About'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.ImageButton (1)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.TextView - No expenses found.Click  to create'), 0)
-
-Mobile.tap(findTestObject(''), 0)
-
-Mobile.scrollToText('Version 1.4 - beta')
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - No Telepon Anda'), 'test123', 0)
 
 Mobile.closeApplication()
 
