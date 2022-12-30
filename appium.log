@@ -51,7 +51,8 @@
 [35m[ADB][39m The installation of '98.apk' took 22623ms
 [35m[UiAutomator2][39m Starting UIAutomator2 server 4.27.0
 [35m[UiAutomator2][39m Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.27.0.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
-[35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
+[35m[UiAut[35m[Appium][39m Received SIGTERM - shutting down
+ to be online...
 [35m[WD Proxy][39m socket hang up
 [35m[WD Proxy][39m socket hang up
 [35m[WD Proxy][39m socket hang up
@@ -63,9 +64,10 @@
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'com.dbo.newdboindonesiahd/com.dbo.newdboindonesiahd.MainActivity and waiting for 'com.dbo.newdboindonesiahd/*'
 [35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 26877fd9-a1e3-4388-88b8-c69e6f82cd74 added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m53724 ms - 1399[39m
-[35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/26877fd9-a1e3-4388-88b8-c69e6f82cd74[39m
+[35m[HTTP][39m [37m[35m[Appium][39m Received SIGTERM - shutting down
+ed SIGTERM - shutting down
+[35m[Appium][39m Received SIGTERM - shutting down
+37mGET[39m [37m/wd/hub/session/26877fd9-a1e3-4388-88b8-c69e6f82cd74[39m
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/session/26877fd9-a1e3-4388-88b8-c69e6f82cd74 [39m[32m200[39m [90m59 ms - 1353[39m
 [35m[HTTP][39m [90m[39m
@@ -74,8 +76,8 @@
 [35m[HTTP][39m [37m<-- GET /wd/hub/session/26877fd9-a1e3-4388-88b8-c69e6f82cd74 [39m[32m200[39m [90m84 ms - 1353[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
-[35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m4 ms - 68[39m
+[35m[HT[35m[Appium][39m Received SIGTERM - shutting down
+/wd/hub/status [39m[32m200[39m [90m4 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/26877fd9-a1e3-4388-88b8-c69e6f82cd74/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m

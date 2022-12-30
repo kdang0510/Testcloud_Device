@@ -17,3 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import io.appium.java_client.android.AndroidDriver
+import io.appium.java_client.android.nativekey.AndroidKey
+import io.appium.java_client.android.nativekey.KeyEvent
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+
+Mobile.startApplication('/Users/vi.kim/Desktop/Desktop/Mobile App/MB Bank_5.7_apkcombo.com.apk', true)
+
+Mobile.delay(20)
+
+Mobile.press
+
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Username), 'Username', 0)
+
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password'), 'Password', 0)
+
+AndroidDriver<?> driver = MobileDriverFactory.getDriver()
+
+driver.pressKey(new KeyEvent(AndroidKey.ENTER))
+
+driver.pressKey(new KeyEvent(AndroidKey.SEARCH)
+
