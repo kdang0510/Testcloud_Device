@@ -22,6 +22,8 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 import com.kms.katalon.core.configuration.RunConfiguration
+import io.appium.java_client.AppiumDriver
+import com. kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 
 class NewTestListener {
 	/**
@@ -32,10 +34,11 @@ class NewTestListener {
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		println testCaseContext.getTestCaseId()
 		println testCaseContext.getTestCaseVariables()
-//		def projectDir = RunConfiguration.getProjectDir()
-//		Mobile.startApplication(projectDir + "/App/APK/ApiDemos.apk", true)
-		
-		Mobile.startApplication(RunConfiguration.getProjectDir()+"/App/APK/ApiDemos.apk", true)
+		def projectDir = RunConfiguration.getProjectDir()
+		Mobile.startApplication(projectDir + "/App/APK/ApiDemos.apk", false)
+		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+		driver. resetApp()
+		//Mobile.startApplication(RunConfiguration.getProjectDir()+"/App/APK/ApiDemos.apk",true)
 		
 	}
 }
