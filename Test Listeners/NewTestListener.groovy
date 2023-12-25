@@ -32,8 +32,10 @@ class NewTestListener {
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		println testCaseContext.getTestCaseId()
 		println testCaseContext.getTestCaseVariables()
-		def projectDir = RunConfiguration.getProjectDir()
-		Mobile.startApplication(projectDir + "/App/APK/ApiDemos.apk", true)
+//		def projectDir = RunConfiguration.getProjectDir()
+//		Mobile.startApplication(projectDir + "/App/APK/ApiDemos.apk", true)
+		
+		Mobile.startApplication(RunConfiguration.getProjectDir()+"/App/APK/ApiDemos.apk", false)
 		
 	}
 }
