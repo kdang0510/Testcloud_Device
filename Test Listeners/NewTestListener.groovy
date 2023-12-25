@@ -35,7 +35,7 @@ class NewTestListener {
 //		def projectDir = RunConfiguration.getProjectDir()
 //		Mobile.startApplication(projectDir + "/App/APK/ApiDemos.apk", true)
 		
-		Mobile.startApplication(RunConfiguration.getProjectDir()+"/App/APK/ApiDemos.apk", false)
+		Mobile.startApplication(RunConfiguration.getProjectDir() + "/App/APK/ApiDemos.apk", true)
 		
 	}
 }
