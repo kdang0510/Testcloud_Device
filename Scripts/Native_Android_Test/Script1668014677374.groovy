@@ -16,14 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-def projectDir = RunConfiguration.getProjectDir()
+not_run: def projectDir = RunConfiguration.getProjectDir()
 
-Mobile.startApplication(projectDir + "/App/APK/ApiDemos.apk", true)
+not_run: Mobile.startApplication(projectDir + '/App/APK/ApiDemos.apk', true)
 
 //Mobile.startApplication('/Users/khang.dang/Desktop/New Folder With Items/APK/ApiDemos-WhiteScreen.apk', true)
-
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Accessibility'), 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Accessibility Node Provider'), 0)
